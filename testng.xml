@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+<test name="模拟测试报告">
+    <classes>
+        <class name="com.kaili.BaiduTest">
+            <methods >
+                <include name="login"/>
+            </methods>
+        </class>
+    </classes>
+</test>
+   <!-- <test name="模拟测试报告2">
+        <classes>
+            <class name="com.kaili.BaiduTest2">
+                <methods >
+                    <include name="login_2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+<listeners >
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+</listeners>
+</suite>
